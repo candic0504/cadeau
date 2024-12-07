@@ -1,0 +1,66 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #9bbec7;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #FF5733;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  /* Boîte du cadeau */
+  .gift-box {
+    display: inline-block;
+    padding: 20px;
+    border: 2px dashed #FF5733;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: pop 1.5s infinite;
+  }
+  
+  /* Image du cadeau */
+  .gift-image {
+    width: 150px;
+    margin: 10px auto;
+    animation: bounce 2s infinite;
+  }
+  
+  /* Nom du cadeau */
+  .gift-name {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
